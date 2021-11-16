@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+     <!-- <script>
+              function myMap() {
+      //           //Map Options
+             var mapProp= {
+              center:{Lat:51.508742,lng:-0.120850},
+                zoom:5,
+               };
+               //new map
+              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+       // Map Markers
+        // var marker = new google.maps.Marker({
+          //   position:{Lat:51.508742,lng:-0.120850},
+          //   map:map,
+          //   icon: '/home/yonela/quicklog-app/codingTest/vehicleLocations.png'
+          // });
+          // //Message screen
+          // var infoWindow = new google.maps.InfoWindow({
+          //   content:'<h1></h1>'
+          // });
+          // marker.addListener('click', function(){
+          //   infoWindow.open(map, marker);
+          // });
+         //Array of Markers
+      var marker = [
+         {
+          
+            coords:{Lat:-33.876115,lng:18.5008116},
+            iconImage:'/home/yonela/quicklog-app/codingTest/vehicleLocations.png',
+            content:'<h1></h1>'
+      
+          
+        },
+        {
+          
+          coords:{Lat:51.508742,lng:-0.120850},
+          iconImage:'/home/yonela/quicklog-app/codingTest/vehicleLocations.png',
+          content:'<h1></h1>'
+      
+        
+      },
+      {
+          
+          coords:{Lat:51.508742,lng:-0.120850},
+          iconImage:'/home/yonela/quicklog-app/codingTest/vehicleLocations.png',
+          content:'<h1></h1>'
+      
+        
+      },
+      ];
+      //Loop through our marker 
+      
+      for(vari = 0; i < markers.length; i++){
+        addMarker(markers[i])  //this will then call our function that is addMarker
+      }
+         
+          //add Marker Function
+      
+          function addMarker(props){
+            var marker = new google.maps.Marker({
+             position:props.coords,
+            map:map,
+          //  icon: '/home/yonela/quicklog-app/codingTest/vehicleLocations.png'
+          });
+          //Check for customIcon
+          if(props.iconImage){
+            //set icon image
+            marker.setIcon(props.iconImage);
+          }
+          //check content/screen message
+          if(props.content){
+           var infoWindow = new google.maps.InfoWindow({
+            content:props.content //removed the value but rather used the content that was passed in
+          });
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+          }
+          }
+              }
+              </script>
+          
+          <div id="app"></div>
+           built files will be auto injected -->
+          <div id="googleMap" style="width:100%;height:400px;"></div>
+          
+          
+          
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM15L8iPeUJAQ-ccZj6joQNIl4Xtxlej4&callback=myMap"></script> -->
+  </body>
+</html>
